@@ -4,17 +4,20 @@ using System.Collections.Generic;
 
 public class Listener  {
     Dictionary<string, float> valueDifference; //Stores percent difference since last value
+    List<string> eventsToAnnounce;
     enum mood { dire, bad, okay, good, great }
 
     public Listener()
     {
         valueDifference = new Dictionary<string, float>();
+        eventsToAnnounce = new List<string>();
     }
 
-    public void RecordString()
+    public void RecordString(string stringToRec)
     {
-
+        eventsToAnnounce.Add(stringToRec);
     }
+
 
     public void RecordValue(string name, float oldValue, float newValue)
     {
@@ -50,11 +53,13 @@ public class Listener  {
                 toReturn.Add(kv.Key + " has " + relation + " to " + kv.Value*100 + " % of it's value");
             } 
         }
+        toReturn.AddRange(eventsToAnnounce);
         return toReturn;
     }
 
     public void ClearList()
     {
         valueDifference.Clear();
+        eventsToAnnounce.Clear();
     }
 }

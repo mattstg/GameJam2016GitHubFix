@@ -35,6 +35,8 @@ public class Globals : MonoBehaviour {
     public static float contentExcessMultiplier = .5f; //per .1 pass threshold, be affected by .05
     public static float worldDamageReduction = .1f;
     public static int daysBetweenEventSpawn = 2;
+    public static float powerIncremenetPerDay = 1;
+    public static float basePower = 5;
 
 
     
