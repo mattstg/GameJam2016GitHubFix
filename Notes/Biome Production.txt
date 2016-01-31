@@ -1,0 +1,35 @@
+Forest:
+- Elk
+- Wood
+- Daisy
+
+Swamp:
+- Rot
+- Stink Weed
+- Frog
+
+Farms:
+- Potatoe
+- Carrot
+- Bean
+
+Ranch:
+- Cow
+- Chicken
+_ Manure
+
+Lake:
+- Fish
+- Seaweed
+- Water Lily
+
+Mountain:
+- Mountain Herb
+- Silver
+- Gold
+
+//DIFFERENT
+Village:
+- population //dependant upon happiness
+- housing
+//is special, has storage
